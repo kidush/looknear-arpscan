@@ -1,6 +1,8 @@
 module Looknear
-  module ParserMacAddress
-    class << self
+  module Arpscan
+    module ParserMacAddress
+      extend self
+
       def as_arr
         read_output.scan(/\w{2}\:\w{2}\:\w{2}\:\w{2}\:\w{2}\:\w{2}/xi)
       end
